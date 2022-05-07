@@ -9,11 +9,11 @@ app.use(express.json());
 mongo.connect();
 
 app.use('/',(req,res,next)=>{
-    console.log("Middlewares");
+    console.log("Middlewaress");
     next();
 })
 
-app.use('/userdetials',employeeRouter);
+app.use('/hallbooking',employeeRouter);
 
 app.listen('3000');
 
